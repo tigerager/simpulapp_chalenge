@@ -9,7 +9,7 @@ function ChatMessage(props) {
 
   return (
     <>
-    <span style={{ color: name===user.displayName ? "blueviolet" : "orangered" }} className={`message ${messageClass}`}>{name===user.displayName ? "you" : name}</span>
+    <span style={{ color: uid===user.uid ? "blueviolet" : "orangered" }} className={`message ${messageClass}`}>{uid===user.uid ? "you" : name}</span>
       <div className={`message ${messageClass}`}>
         <img alt=""
           src={

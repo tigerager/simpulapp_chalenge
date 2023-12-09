@@ -1,13 +1,15 @@
+import { useAuthState } from "react-firebase-hooks/auth";
 import { firebaseAuth } from "../../config/firebase";
 
 function ChatMessage(props) {
   const { text, uid, photoURL, name } = props.message;
+  const [user] = useAuthState(firebaseAuth);
   const messageClass =
     uid === firebaseAuth.currentUser.uid ? "sent" : "received";
 
   return (
     <>
-    <span>--------------------{name}--------------------</span>
+    <span style={{ color: name===user.displayName ? "blueviolet" : "orangered" }} className={`message ${messageClass}`}>{name===user.displayName ? "you" : name}</span>
       <div className={`message ${messageClass}`}>
         <img alt=""
           src={

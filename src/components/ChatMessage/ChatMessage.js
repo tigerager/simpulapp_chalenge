@@ -17,7 +17,7 @@ function ChatMessage(props) {
             "https://media-exp1.licdn.com/dms/image/C4D03AQGdjRH_8EOjAA/profile-displayphoto-shrink_400_400/0/1641733341873?e=1670457600&v=beta&t=nWuW9BjwZxZ4g4jkl6B7cD4TkUd7kBr0JQwCU87dv5E"
           }
         />
-        <p>{text}</p>
+        <p className="p">{text}</p>
       </div>
     </>
   );

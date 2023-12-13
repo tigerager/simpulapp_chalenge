@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(68, 37, 37);
+}
+
+ul li {
+    list-style: none;
+    font-size: 14px;
+    padding: 12px;
+    user-select: none;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    margin-left: -5%;
+
+}
+
+.container {
+    margin-top: -34.75%;
+    background-color: white;
+    text-align: left;
+    width: 40%;
+    height: 530px;
+    margin-left: 58.5%;
+    border-radius: 3%;
+    padding: 0.2%;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 111;
+    visibility: hidden;
+
+}
+
+.wrapper{
+    margin-left: 4%;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}  
+
+ul li.checked::before {
+    background-image: url(./img/checked.png);
+}  
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-image: url(./img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: -5.5%;
+    margin-top: 0.2%;
+}
+
+ul li:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+ul li span {
+    position: absolute;
+    margin-top: -1.5%;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    right: 0;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: #ccd0d8;
+}
+
+.daysleft {
+    position: absolute;
+    z-index: 1;
+    right: 23%;
+    top: 16.7%;
+}
+
+.date{
+    position: absolute;
+    z-index: 1;
+    right: 13%;
+    top: 16.7%; 
+}
+
+.inputDate{
+    margin-left: 10%;
+    margin-top: 3px;
+    right:64.5%;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 7%;
+    top: 22.7%;
+}
+.inputDateDll{
+    margin-left: 10%;
+    margin-top: 3px;
+    right:64.5%;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 7%;
+}
+
+.description{
+    position: absolute;
+    right: 27.2%;
+    margin-top: 3px;
+    padding: 5px;
+    border: none;
+    margin-right: 30%;
+}
+.description::placeholder {
+    font-style: italic;  
+ }
+
+.showDates{
+    position: absolute;
+    right: 8%;
+    margin-top: -7.1%;
+ }
+
+.dayslefts{
+    position: absolute;
+    z-index: 1;
+    right: 23%;
+    margin-top: -7.1%;
+    font-size: 12px; 
+    margin-right: 5%;
+    color: red;
+}
+

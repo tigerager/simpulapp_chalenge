@@ -1,0 +1,196 @@
+
+  
+  .App {
+    text-align: center;
+    max-width: 30vw;
+    margin: 0 auto;
+    margin-right: 1.5%;
+    visibility: hidden;
+  }
+  
+  .App header {
+    background-color: #41bd7f;
+    height: 10vh;
+    min-height: 50px;
+    color: white;
+    position: fixed;
+    width: 30.3%;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .App section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 77vh;
+    background-color: #F7ECDE;
+    position: relative;
+    height: 77vh;
+    margin-top: 19%;
+    width: 101%;
+    
+  }
+  
+  .main {
+    padding: 10px;
+    height: 80vh;
+    margin: 10vh 0 10vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  .main::-webkit-scrollbar-track {
+    background: #54BAB9;
+  }
+  
+  .main::-webkit-scrollbar-thumb {
+    background: #54BAB9;
+  }
+  
+  .form {
+    height: 10vh;
+    position: fixed;
+    bottom: 11%;
+    background-color: #54BAB9;
+    width: 30.3%;
+    max-width: 100vw;
+    display: flex;
+    font-size: 1.5rem;
+  }
+  
+  .form button {
+    width: 10%;
+    background-color:#54BAB9;
+  }
+  
+  
+  .writeMessage {
+    line-height: 1.5;
+    width: 100%;
+    font-size: 1.5rem;
+    background: #6bbd97;
+    color: gray;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+  }
+  
+  .button-submit, .sign-in {
+    background-color: #4de4ad; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  
+  .button-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  
+  .sign-in {
+    color: white;
+    background: #41bd7f;
+    max-width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    
+  }
+  
+  .sign-out {
+    color: #282c34;
+    background: white;
+    max-width: 400px;
+    border-radius: 30px;
+    align-items: flex-end;
+    font-family: cursive;
+    font-size: 15px;
+  }
+  
+  ul, li {
+    text-align: left;
+    list-style: none;
+  }
+  
+  .p {
+    max-width: 500px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .sent {
+    flex-direction: row-reverse;
+  }
+  
+  .sent p {
+    color: white;
+    background: #376fb4;
+    align-self: flex-end;
+  }
+  .received p {
+    background: #54ae7e;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 2px 5px;  
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px 5px;
+  }
+
+  .showHide{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1111;
+    position: absolute;
+    right: 6.3%;
+
+  }
+
+  .todoList{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1111;
+    position: absolute;
+    right: 2%;
+    bottom: 2.5%;
+  }
+

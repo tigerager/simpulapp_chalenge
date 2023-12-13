@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseApp = initializeApp({
-  apiKey: "AIzaSyCc0vKou50C-QTjSM51fPuW2pcmeO3PYk4",
-  authDomain: "testfrondend.firebaseapp.com",
-  projectId: "testfrondend",
-  storageBucket: "testfrondend.appspot.com",
-  messagingSenderId: "172532330033",
-  appId: "1:172532330033:web:2105a58744faf12f4aef10"
+  apiKey: "AIzaSyAdZNSkKGpEqITmBF3Opk_57jkezp6KfHI",
+  authDomain: "frontend-6418b.firebaseapp.com",
+  projectId: "frontend-6418b",
+  storageBucket: "frontend-6418b.appspot.com",
+  messagingSenderId: "1011910139307",
+  appId: "1:1011910139307:web:379b95345338ee9864c6ee",
+  measurementId: "G-31GHMGWZSD"
 });
 const firebaseFirestore = getFirestore(firebaseApp);
 const firebaseAuth = getAuth();

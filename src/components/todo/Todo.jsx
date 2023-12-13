@@ -28,7 +28,6 @@ export const Todo = () => {
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
-        localStorage.setItem
         setInput(""); //mengosongkan input pertama
     }else if(count > 0){
       //mencari form yang menginputkan untuk ditampilkan di list item
@@ -121,9 +120,9 @@ export const Todo = () => {
     })
     } 
   }
-  function save() {
-    localStorage.setItem("data", document.getElementsByClassName("container").item);
-  }
+  // function save() {
+  //   localStorage.setItem("data", document.getElementsByClassName("container").item);
+  // }
   // function activate(){
   //   document.getElementById("testing").readOnly = false;
   // }

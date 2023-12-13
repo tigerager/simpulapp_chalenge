@@ -9,6 +9,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import Login from "../../components/Login";
 import { firebaseAuth } from "../../config/firebase";
 import Todo from "../../components/todo";
+import Logout from "../Logout";
 getAnalytics();
 
 function Home() {
@@ -33,9 +34,10 @@ function Home() {
   return (
     <>
     {user ? <ChatRoom /> : <Login />}
-    {user ? <Todo /> : ""}
-    {user ? <img src="https://cdn-icons-png.flaticon.com/128/134/134935.png" alt="" className="showHide" style={{ position: "absolute", bottom: "20px" }} onClick={showHide} /> : ""}
-    {user ? <img src="https://cdn-icons-png.flaticon.com/128/9285/9285054.png" alt="" className="todoList" onClick={showHideTodo}/> : ""}
+    {user ? <Todo /> : <></>}
+    {user ? <Logout /> : <></>}
+    {user ? <img src="https://cdn-icons-png.flaticon.com/128/134/134935.png" alt="" className="showHide" style={{ position: "absolute", bottom: "20px" }} onClick={showHide} /> : <></>}
+    {user ? <img src="https://cdn-icons-png.flaticon.com/128/9285/9285054.png" alt="" className="todoList" onClick={showHideTodo}/> : <></>}
     </>
   );
 }

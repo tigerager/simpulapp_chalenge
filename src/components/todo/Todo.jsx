@@ -139,9 +139,9 @@ export const Todo = () => {
       </span> 
       <span id={"showDate"+i} className='showDates' style={{ fontSize: "12px", marginRight: "5%" }}>
       </span><br />
-      <input id={"inputDate"+i} type='date' className='inputDateDll'/><br />
-      <input className='description' placeholder='No description' /><br />
-      <button id={'btn'+i} type='submit'>Add</button><br/>
+      <span className='clockIcon1'>🕑</span><input id={"inputDate"+i} type='date' className='inputDateDll'/><br />
+      <span className='descIcon'>📝</span><input className='description' placeholder='No description' /><br />
+      <button style={{ marginTop: "2%" }} id={'btn'+i} type='submit'>Add</button><br/>
       </form>
       </div>) 
   }
@@ -163,14 +163,23 @@ export const Todo = () => {
               new Date(callender).getDate()+"/"+(new Date().getMonth() + 1)
               +"/"+new Date(callender).getFullYear()}</span>
               <br />
-              <input id='inputDate' className='inputDate' type='date' value={callender} onChange={(e)=>setCallender(e.target.value)} /><br />
-              <input className='description' id='description' placeholder='No description' /><br />
-              <button type='submit' id='add'>Add</button>
+              <span className='clockIcon'>🕑</span><input id='inputDate' className='inputDate' type='date' value={callender} onChange={(e)=>setCallender(e.target.value)} /><br />
+              <span className='descIcon'>📝</span><input className='description' id='description' placeholder='No description' /><br />
+              <button style={{ marginTop: "2%" }} type='submit' id='add'>Add</button>
           </form>
           <div>
             {title}{/* memasukkan form tambahan ke input */} 
           </div>
-          <button type='submit' onClick={() => setCount(count+1)}>Add new</button><br/>
+          <button type='submit' 
+           style={{ 
+            position: "absolute", 
+            right: "2%",
+            top: "4%",
+            padding: "5px",
+            backgroundColor: "#9BCCD6",
+            borderRadius: "10%",
+            }}
+          onClick={() => setCount(count+1)}>Add new</button><br/>
         </div>
     </div>
     </body>

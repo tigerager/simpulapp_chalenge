@@ -122,7 +122,11 @@
     border-radius: 30px;
     align-items: flex-end;
     font-family: cursive;
-    font-size: 15px;
+    font-size: 17px;
+    position: absolute;
+    padding: 7px;
+    top: 3.5%;
+    right: 3.5%;
   }
   
   ul, li {

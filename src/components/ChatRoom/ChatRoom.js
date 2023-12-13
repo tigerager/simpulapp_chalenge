@@ -3,7 +3,6 @@ import {collection, getDocs, addDoc, orderBy, limit, query, serverTimestamp, } f
 import { firebaseAuth, firebaseFirestore } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import ChatMessage from "../ChatMessage";
-import Logout from "../../components/Logout";
 
 function ChatRoom() {
   const [user] = useAuthState(firebaseAuth);
@@ -37,14 +36,13 @@ function ChatRoom() {
     <>
     <div id="chat" className="App">
         <header>
-            <img alt=""
+            {/* <img alt=""
             className="logo"
             src=
                 "https://media.istockphoto.com/id/1445614323/id/foto/kota-pintar-dengan-jalur-cahaya-bercahaya-garis-kecepatan-mengelilingi-kota-konsep-teknologi.jpg?s=2048x2048&w=is&k=20&c=fmFnxou21szzQbCZ-9wof5C6EfgeAebMgW0SRtIyxHk="
             
-            />
-            {user ? <h2>{`Welcome`}</h2> : <></>}
-            <Logout />
+            /> */}
+            {user ? <h2 style={{ position: "absolute", right: "35%" }}>{`Messages`}</h2> : <></>}
         </header>
         <section>
           <main className="main">

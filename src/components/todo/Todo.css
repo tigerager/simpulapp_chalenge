@@ -142,3 +142,20 @@ ul li span:hover{
     color: red;
 }
 
+.clockIcon{
+    position: absolute;
+    left: 9%;
+    top: 20.8%;
+}
+
+.descIcon{
+    position: absolute;
+    left: 9%;
+    margin-top: 0.3%;
+}
+
+.clockIcon1{
+    position: absolute;
+    left: 9%;
+    margin-top: 1.2%;
+}
